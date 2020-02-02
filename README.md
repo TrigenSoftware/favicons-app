@@ -20,10 +20,10 @@
 [dependabot-url]: https://dependabot.com/
 
 [storybook]: https://img.shields.io/badge/UI-Storybook-e94485.svg
-[storybook-url]: https://trigensofware.github.io/favicons-app
+[storybook-url]: https://trigensoftware.github.io/favicons-app
 
 [documentation]: https://img.shields.io/badge/API-Documentation-2b7489.svg
-[documentation-url]: https://trigensofware.github.io/favicons-app/docs
+[documentation-url]: https://trigensoftware.github.io/favicons-app/docs
 
 Favicons generator web app.
 
