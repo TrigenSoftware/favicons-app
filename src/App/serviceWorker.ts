@@ -1,4 +1,5 @@
 import {
+	cleanupOutdatedCaches,
 	precacheAndRoute,
 	getCacheKeyForURL
 } from 'workbox-precaching';
@@ -9,8 +10,12 @@ import {
 import {
 	StaleWhileRevalidate
 } from 'workbox-strategies';
+import UpdaterHost from './util/UpdaterHost';
 
 declare var self: ServiceWorkerGlobalScope;
+
+UpdaterHost.connect();
+cleanupOutdatedCaches();
 
 precacheAndRoute(
 	self.__precacheManifest.filter(

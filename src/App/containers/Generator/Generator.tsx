@@ -61,7 +61,7 @@ export default class GeneratorContainer extends Component<IProps, IState> {
 					<label
 						className={classes.workerSwitch}
 					>
-						Browser{' '}
+						Page{' '}
 						<Switch
 							type='checkbox'
 							name='useWebWorker'

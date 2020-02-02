@@ -4,11 +4,14 @@ import {
 } from 'react-dom';
 import registerServiceWorker from './serviceWorker?tsw';
 import App from './App';
+import updater from './updater';
 
 function main() {
 
 	if (process.env.NODE_ENV !== 'development') {
-		registerServiceWorker({ scope: '/' });
+		updater(
+			registerServiceWorker({ scope: '/' }
+		));
 	}
 
 	const root = document.querySelector('#view');
