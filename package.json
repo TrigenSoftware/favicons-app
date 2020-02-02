@@ -31,7 +31,7 @@
     "serve": "trigen-scripts serve"
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.0",
+    "@babel/runtime": "^7.8.4",
     "@flexis/favicons": "^1.4.4",
     "@flexis/ui": "^1.1.1-beta",
     "@loadable/component": "^5.10.2",
@@ -42,16 +42,15 @@
     "canvg": "^3.0.5",
     "comlink": "^4.2.0",
     "core-js": "3",
-    "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.6.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "xmldom": "^0.2.1"
   },
   "devDependencies": {
-    "@trigen/scripts": "4.0.0",
-    "@trigen/scripts-plugin-eslint": "4.0.0",
-    "@trigen/scripts-preset-react-app": "4.0.0",
+    "@trigen/scripts": "^4.0.0",
+    "@trigen/scripts-plugin-eslint": "^4.0.0",
+    "@trigen/scripts-preset-react-app": "^4.0.0",
     "@types/faker": "^4.1.4",
     "faker": "^4.1.0",
     "webpack-bundle-analyzer": "^3.6.0",
