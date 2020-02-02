@@ -3,9 +3,6 @@ import {
 	storiesOf
 } from '@storybook/react';
 import {
-	MemoryRouter
-} from 'react-router';
-import {
 	text,
 	boolean,
 	select
@@ -42,11 +39,6 @@ export const parameters = extendInfo(
 
 storiesOf('Components|Link', module)
 	.addParameters(parameters)
-	.addDecorator(story => (
-		<MemoryRouter initialEntries={['/']}>
-			{story()}
-		</MemoryRouter>
-	))
 	.add(
 		'with text',
 		() => (
