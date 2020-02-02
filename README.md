@@ -2,7 +2,7 @@
 
 [![Dependencies status][deps]][deps-url]
 [![Build status][build]][build-url]
-[![Coverage status][coverage]][coverage-url]
+<!-- [![Coverage status][coverage]][coverage-url] -->
 [![Dependabot badge][dependabot]][dependabot-url]
 [![Storybook badge][storybook]][storybook-url]
 [![Documentation badge][documentation]][documentation-url]
@@ -60,14 +60,9 @@ yarn serve
 
 To be able to build this app, you should provide some environment variables:
 
-```bash
-OPENWEATHER_APPID=XXX # OpenWeather API App ID; not set by default
-```
-
 Optional variables:
 
 ```bash
-PROXY_API_URI='' # valid URI; not set by default
 DISABLE_BROWSER_SYNC=false # boolean; `false` by default
 ```
 
