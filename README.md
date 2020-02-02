@@ -19,7 +19,7 @@
 [dependabot]: https://api.dependabot.com/badges/status?host=github&repo=TrigenSoftware/favicons-app
 [dependabot-url]: https://dependabot.com/
 
-[storybook]: https://img.shields.io/badge/Storybook-e94485.svg
+[storybook]: https://img.shields.io/badge/UI-Storybook-e94485.svg
 [storybook-url]: https://trigensofware.github.io/favicons-app
 
 [documentation]: https://img.shields.io/badge/API-Documentation-2b7489.svg
