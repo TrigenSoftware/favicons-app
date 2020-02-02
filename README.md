@@ -2,7 +2,6 @@
 
 [![Dependencies status][deps]][deps-url]
 [![Build status][build]][build-url]
-<!-- [![Coverage status][coverage]][coverage-url] -->
 [![Dependabot badge][dependabot]][dependabot-url]
 [![Storybook badge][storybook]][storybook-url]
 [![Documentation badge][documentation]][documentation-url]
