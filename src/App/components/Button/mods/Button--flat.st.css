@@ -1,0 +1,196 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named:
+		opacity,
+		lighten,
+		darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named:
+		colorBlack,
+		colorGrayLight,
+		colorBrandPrimary,
+		colorBrandSecondary,
+		colorBrandSuccess,
+		colorBrandInfo,
+		colorBrandWarning,
+		colorBrandDanger;
+}
+
+:import {
+	-st-from: '../Button.st.css';
+	-st-default: Button;
+}
+
+:vars {
+	/* Default */
+	colorDefaultHover: value(colorGrayLight);
+	colorDefaultActive: darken(value(colorGrayLight), 5%);
+
+	/* Primary */
+	colorPrimaryHover: lighten(value(colorBrandPrimary), 60%);
+	colorPrimaryActive: lighten(value(colorBrandPrimary), 58%);
+
+	/* Secondary */
+	colorSecondaryHover: value(colorBrandSecondary);
+	colorSecondaryActive: darken(value(colorBrandSecondary), 10%);
+
+	/* Success */
+	colorSuccessHover: lighten(value(colorBrandSuccess), 95%);
+	colorSuccessActive: lighten(value(colorBrandSuccess), 90%);
+
+	/* Info */
+	colorInfoHover: lighten(value(colorBrandInfo), 19%);
+	colorInfoActive: lighten(value(colorBrandInfo), 17%);
+
+	/* Warning */
+	colorWarningHover: lighten(value(colorBrandWarning), 90%);
+	colorWarningActive: lighten(value(colorBrandWarning), 85%);
+
+	/* Danger */
+	colorDangerHover: lighten(value(colorBrandDanger), 70%);
+	colorDangerActive: lighten(value(colorBrandDanger), 65%);
+}
+
+.flat {
+	-st-extends: Button;
+	background-color: transparent;
+}
+
+.flatPrimary {
+	-st-extends: Button;
+	color: value(colorBrandPrimary);
+}
+
+.flatSecondary {
+	-st-extends: Button;
+	color: value(colorBlack);
+}
+
+.flatSuccess {
+	-st-extends: Button;
+	color: value(colorBrandSuccess);
+}
+
+.flatInfo {
+	-st-extends: Button;
+	color: darken(value(colorBrandInfo), 10%);
+}
+
+.flatWarning {
+	-st-extends: Button;
+	color: value(colorBrandWarning);
+}
+
+.flatDanger {
+	-st-extends: Button;
+	color: value(colorBrandDanger);
+}
+
+/**
+ * Default
+ */
+
+.flat:focus,
+.flat:not(:disabled):hover,
+.flat:not(:disabled):pseudoFocus {
+	background-color: value(colorDefaultHover);
+}
+
+.flat:not(:disabled):active,
+.flat:not(:disabled):pseudoActive {
+	background-color: value(colorDefaultActive);
+}
+
+/**
+ * Primary
+ */
+
+.flatPrimary:focus,
+.flatPrimary:not(:disabled):hover,
+.flatPrimary:not(:disabled):pseudoFocus {
+	background-color: value(colorPrimaryHover);
+}
+
+.flatPrimary:not(:disabled):active,
+.flatPrimary:not(:disabled):pseudoActive {
+	background-color: value(colorPrimaryActive);
+}
+
+/**
+ * Secondary
+ */
+
+.flatSecondary:focus,
+.flatSecondary:not(:disabled):hover,
+.flatSecondary:not(:disabled):pseudoFocus {
+	background-color: value(colorSecondaryHover);
+}
+
+.flatSecondary:not(:disabled):active,
+.flatSecondary:not(:disabled):pseudoActive {
+	background-color: value(colorSecondaryActive);
+}
+
+/**
+ * Success
+ */
+
+.flatSuccess:focus,
+.flatSuccess:not(:disabled):hover,
+.flatSuccess:not(:disabled):pseudoFocus {
+	background-color: value(colorSuccessHover);
+}
+
+.flatSuccess:not(:disabled):active,
+.flatSuccess:not(:disabled):pseudoActive {
+	background-color: value(colorSuccessActive);
+}
+
+/**
+ * Info
+ */
+
+.flatInfo:focus,
+.flatInfo:not(:disabled):hover,
+.flatInfo:not(:disabled):pseudoFocus {
+	background-color: value(colorInfoHover);
+}
+
+.flatInfo:not(:disabled):active,
+.flatInfo:not(:disabled):pseudoActive {
+	background-color: value(colorInfoActive);
+}
+
+/**
+ * Warning
+ */
+
+.flatWarning:focus,
+.flatWarning:not(:disabled):hover,
+.flatWarning:not(:disabled):pseudoFocus {
+	background-color: value(colorWarningHover);
+}
+
+.flatWarning:not(:disabled):active,
+.flatWarning:not(:disabled):pseudoActive {
+	background-color: value(colorWarningActive);
+}
+
+/**
+ * Danger
+ */
+
+.flatDanger:focus,
+.flatDanger:not(:disabled):hover,
+.flatDanger:not(:disabled):pseudoFocus {
+	background-color: value(colorDangerHover);
+}
+
+.flatDanger:not(:disabled):active,
+.flatDanger:not(:disabled):pseudoActive {
+	background-color: value(colorDangerActive);
+}

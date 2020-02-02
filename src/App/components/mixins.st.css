@@ -1,0 +1,16 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: opacity;
+}
+
+:import {
+	-st-from: './variables.st.css';
+	-st-named:
+		sizeBorderRadius,
+		colorBlueLight;
+}
+
+.outline {
+	box-shadow: 0 0 0 value(sizeBorderRadius) opacity(value(colorBlueLight), 50%);
+}

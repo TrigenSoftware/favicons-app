@@ -1,0 +1,184 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named:
+		colorWhite,
+		colorGrayLight,
+		colorBrandPrimary,
+		colorBrandSecondary,
+		colorBrandSuccess,
+		colorBrandInfo,
+		colorBrandWarning,
+		colorBrandDanger;
+}
+
+:import {
+	-st-from: '../Button.st.css';
+	-st-default: Button;
+}
+
+.outline {
+	-st-extends: Button;
+	border: 1px solid darken(value(colorGrayLight), 10%);
+	background-color: transparent;
+	color: darken(value(colorGrayLight), 10%);
+}
+
+.outlinePrimary {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandPrimary);
+	color: value(colorBrandPrimary);
+}
+
+.outlineSecondary {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandSecondary);
+	color: value(colorBrandSecondary);
+}
+
+.outlineSuccess {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandSuccess);
+	color: value(colorBrandSuccess);
+}
+
+.outlineInfo {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandInfo);
+	color: value(colorBrandInfo);
+}
+
+.outlineWarning {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandWarning);
+	color: value(colorBrandWarning);
+}
+
+.outlineDanger {
+	-st-extends: Button;
+	border: 1px solid value(colorBrandDanger);
+	color: value(colorBrandDanger);
+}
+
+/**
+ * Default
+ */
+
+.outline:focus,
+.outline:not(:disabled):hover,
+.outline:not(:disabled):pseudoFocus {
+	color: value(colorWhite);
+}
+
+.outline:not(:disabled):active,
+.outline:not(:disabled):pseudoActive {
+	background-color: darken(value(colorGrayLight), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Primary
+ */
+
+.outlinePrimary:focus,
+.outlinePrimary:not(:disabled):hover,
+.outlinePrimary:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandPrimary);
+	color: value(colorWhite);
+}
+
+.outlinePrimary:not(:disabled):active,
+.outlinePrimary:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandPrimary), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Secondary
+ */
+
+.outlineSecondary:focus,
+.outlineSecondary:not(:disabled):hover,
+.outlineSecondary:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandSecondary);
+	color: value(colorWhite);
+}
+
+.outlineSecondary:not(:disabled):active,
+.outlineSecondary:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandSecondary), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Success
+ */
+
+.outlineSuccess:focus,
+.outlineSuccess:not(:disabled):hover,
+.outlineSuccess:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandSuccess);
+	color: value(colorWhite);
+}
+
+.outlineSuccess:not(:disabled):active,
+.outlineSuccess:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandSuccess), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Info
+ */
+
+.outlineInfo:focus,
+.outlineInfo:not(:disabled):hover,
+.outlineInfo:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandInfo);
+	color: value(colorWhite);
+}
+
+.outlineInfo:not(:disabled):active,
+.outlineInfo:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandInfo), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Warning
+ */
+
+.outlineWarning:focus,
+.outlineWarning:not(:disabled):hover,
+.outlineWarning:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandWarning);
+	color: value(colorWhite);
+}
+
+.outlineWarning:not(:disabled):active,
+.outlineWarning:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandWarning), 20%);
+	color: value(colorWhite);
+}
+
+/**
+ * Danger
+ */
+
+.outlineDanger:focus,
+.outlineDanger:not(:disabled):hover,
+.outlineDanger:not(:disabled):pseudoFocus {
+	background-color: value(colorBrandDanger);
+	color: value(colorWhite);
+}
+
+.outlineDanger:not(:disabled):active,
+.outlineDanger:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandDanger), 20%);
+	color: value(colorWhite);
+}

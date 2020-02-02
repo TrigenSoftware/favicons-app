@@ -1,0 +1,28 @@
+{
+  "generator-trigen-app": {
+    "editPackage": true,
+    "pkg": {
+      "name": "favicons-app",
+      "version": "1.0.0",
+      "description": "Favicons generator web app.",
+      "repository": "https://github.com/TrigenSoftware/favicons-app",
+      "author": "dangreen",
+      "license": "MIT"
+    },
+    "editWebman": true,
+    "webman": {
+      "name": "favicons-app",
+      "short_name": "favicons-app",
+      "description": "Favicons generator web app.",
+      "dir": "auto",
+      "lang": "en-US",
+      "display": "standalone",
+      "orientation": "portrait",
+      "scope": "/",
+      "start_url": "/?homescreen=1",
+      "background_color": "#fff",
+      "theme_color": "#fff"
+    },
+    "gitInit": true
+  }
+}

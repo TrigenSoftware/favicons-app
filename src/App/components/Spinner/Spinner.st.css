@@ -1,0 +1,91 @@
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named: colorBlack;
+}
+
+:import {
+	-st-from: './mods/Spinner--primary.st.css';
+	-st-named: primary;
+}
+
+:import {
+	-st-from: './mods/Spinner--secondary.st.css';
+	-st-named: secondary;
+}
+
+:import {
+	-st-from: './mods/Spinner--success.st.css';
+	-st-named: success;
+}
+
+:import {
+	-st-from: './mods/Spinner--info.st.css';
+	-st-named: info;
+}
+
+:import {
+	-st-from: './mods/Spinner--warning.st.css';
+	-st-named: warning;
+}
+
+:import {
+	-st-from: './mods/Spinner--danger.st.css';
+	-st-named: danger;
+}
+
+@keyframes rotatingAnimation {
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.root {
+	-st-states:
+		primary,
+		secondary,
+		success,
+		info,
+		warning,
+		danger;
+	display: inline-block;
+	animation: rotatingAnimation .75s linear infinite;
+	border: .25em solid value(colorBlack);
+	border-radius: 50%;
+	border-right-color: transparent;
+	width: 2em;
+	height: 2em;
+	font-size: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		animation: none;
+	}
+}
+
+.root:primary {
+	-st-mixin: primary;
+}
+
+.root:secondary {
+	-st-mixin: secondary;
+}
+
+.root:success {
+	-st-mixin: success;
+}
+
+.root:info {
+	-st-mixin: info;
+}
+
+.root:warning {
+	-st-mixin: warning;
+}
+
+.root:danger {
+	-st-mixin: danger;
+}

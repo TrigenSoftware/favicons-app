@@ -1,0 +1,25 @@
+{
+	"setupFiles": [
+		"@trigen/scripts-plugin-storybook/jest/registerContext"
+	],
+	"testRegex": "/(src/App|test)/.*(\\.|/)spec\\.(jsx?|tsx?)$",
+	"transform": {
+		"^.+\\.(jsx?|tsx?)$": "babel-jest"
+	},
+	"moduleNameMapper": {
+		"\\.(css|svg)$": "@trigen/scripts-plugin-storybook/jest/mockFile",
+		"~(.*)$": "<rootDir>/src/App/$1"
+	},
+	"collectCoverage": true,
+	"collectCoverageFrom": [
+		"src/**/*.{js,jsx,ts,tsx}",
+		"!src/**/spec.ts",
+		"!src/**/*.spec.ts",
+		"!**/*.d.ts",
+		"!**/node_modules/**"
+	],
+	"coverageReporters": [
+		"lcovonly",
+		"text"
+	]
+}

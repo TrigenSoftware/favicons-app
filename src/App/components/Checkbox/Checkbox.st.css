@@ -1,0 +1,83 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/rel';
+	-st-default: rel;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		durationTransition,
+		opacityDisabled,
+		sizeBorderRadius,
+		colorWhite,
+		colorGray,
+		colorBlue;
+}
+
+:import {
+	-st-from: '../mixins.st.css';
+	-st-named: outline;
+}
+
+.root {
+	position: relative;
+	will-change:
+		opacity,
+		border-color,
+		background-color,
+		box-shadow;
+	transition:
+		opacity value(durationTransition),
+		border-color value(durationTransition),
+		background-color value(durationTransition),
+		box-shadow value(durationTransition);
+	appearance: none;
+	outline: none;
+	border: 1px solid value(colorGray);
+	border-radius: rel(value(sizeBorderRadius), 10);
+	background-color: value(colorWhite);
+	width: 1.6em;
+	height: 1.6em;
+	vertical-align: text-bottom;
+	font-size: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root:checked {
+	border-color: value(colorBlue);
+	background-color: value(colorBlue);
+}
+
+.root:checked::before {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%) rotate(-45deg);
+	border-bottom: .15em solid value(colorWhite);
+	border-left: .15em solid value(colorWhite);
+	width: 1.1em;
+	height: .5em;
+	content: '';
+}
+
+.root:disabled {
+	opacity: value(opacityDisabled);
+}
+
+.root:focus {
+	-st-mixin: outline;
+}
+
+.root:focus,
+.root:not(:disabled):hover {
+	border: 1px solid value(colorBlue);
+}

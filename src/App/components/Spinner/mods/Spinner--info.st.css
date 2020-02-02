@@ -1,0 +1,10 @@
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandInfo;
+}
+
+.info {
+	border-color: value(colorBrandInfo);
+	border-right-color: transparent;
+}

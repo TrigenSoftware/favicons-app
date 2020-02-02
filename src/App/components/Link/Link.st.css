@@ -1,0 +1,133 @@
+
+:import {
+	-st-from: '@flexis/ui/components/Link/Link.st.css';
+	-st-named: icon;
+}
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '@flexis/ui/stylable/rel';
+	-st-default: rel;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		durationTransition,
+		colorBrandPrimary;
+}
+
+:import {
+	-st-from: '../mixins.st.css';
+	-st-named: outline;
+}
+
+:import {
+	-st-from: './mods/Link--secondary.st.css';
+	-st-named: secondary;
+}
+
+:import {
+	-st-from: './mods/Link--success.st.css';
+	-st-named: success;
+}
+
+:import {
+	-st-from: './mods/Link--info.st.css';
+	-st-named: info;
+}
+
+:import {
+	-st-from: './mods/Link--warning.st.css';
+	-st-named: warning;
+}
+
+:import {
+	-st-from: './mods/Link--danger.st.css';
+	-st-named: danger;
+}
+
+:import {
+	-st-from: './mods/Link--disguised.st.css';
+	-st-named: disguised;
+}
+
+.root {
+	-st-states:
+		disguised,
+		/* Color states */
+		primary,
+		secondary,
+		success,
+		info,
+		warning,
+		danger;
+	will-change:
+		color,
+		box-shadow;
+	transition:
+		color value(durationTransition),
+		box-shadow value(durationTransition);
+	outline: none;
+	text-decoration: none;
+	color: value(colorBrandPrimary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root:focus {
+	-st-mixin: outline;
+}
+
+.root:hover,
+.root:focus {
+	text-decoration: underline;
+	color: darken(value(colorBrandPrimary), 16%);
+}
+
+.root .icon {
+	width: 1em;
+	height: 1em;
+}
+
+.root .icon:rightAlign {
+	margin-left: rel(5, 16);
+}
+
+.root .icon:leftAlign {
+	margin-right: rel(5, 16);
+}
+
+.root:secondary {
+	-st-mixin: secondary;
+}
+
+.root:success {
+	-st-mixin: success;
+}
+
+.root:info {
+	-st-mixin: info;
+}
+
+.root:warning {
+	-st-mixin: warning;
+}
+
+.root:danger {
+	-st-mixin: danger;
+}
+
+.root:disguised {
+	-st-mixin: disguised;
+}

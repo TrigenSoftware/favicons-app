@@ -1,0 +1,7 @@
+
+.disguised,
+.disguised:hover,
+.disguised:focus {
+	text-decoration: none;
+	color: inherit;
+}

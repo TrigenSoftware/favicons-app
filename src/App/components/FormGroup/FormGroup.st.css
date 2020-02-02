@@ -1,0 +1,98 @@
+
+:import {
+	-st-from: '@flexis/ui/components/FormGroup/FormGroup.st.css';
+	-st-default: FormGroup;
+	-st-named:
+		label,
+		description,
+		icon,
+		input;
+}
+
+:import {
+	-st-from: '@flexis/ui/stylable/rel';
+	-st-default: rel;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		opacityDisabled,
+		durationTransition,
+		sizeGapVertical,
+		colorRed;
+}
+
+.root {
+	-st-extends: FormGroup;
+	margin-bottom: value(sizeGapVertical);
+}
+
+.root .label {
+	padding-bottom: rel(5, 16);
+	font-size: 1.6rem;
+}
+
+.root .description {
+	will-change: color;
+	transition: color value(durationTransition);
+	padding-top: rel(5, 16);
+	font-size: 1.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root .description {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root .icon {
+	pointer-events: none;
+	position: relative;
+	z-index: 1;
+	will-change: opacity;
+	transition: opacity value(durationTransition);
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root .icon {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root .icon:leftAlign {
+	left: 1.2rem;
+}
+
+.root .icon:rightAlign {
+	right: 1.2rem;
+}
+
+.root .input:leftIcon {
+	margin-left: -1.6rem;
+	padding-left: calc(1.6rem + rel(20, 16));
+}
+
+.root .input:rightIcon {
+	margin-right: -1.6rem;
+	padding-right: calc(1.6rem + rel(20, 16));
+}
+
+.root .input:disabled ~ .icon {
+	opacity: value(opacityDisabled);
+}
+
+.root .input:required ~ .label::after {
+	color: value(colorRed);
+	content: '\00a0*';
+}
+
+.root .input:invalid ~ .description {
+	color: value(colorRed);
+}

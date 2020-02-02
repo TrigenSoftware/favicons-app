@@ -1,0 +1,40 @@
+
+:import {
+	-st-from: '~/components/variables.st.css';
+	-st-named:
+		sizeBorderRadius,
+		sizeGapSmall,
+		colorWhite;
+}
+
+.root {
+	display: flex;
+}
+
+.root > * {
+	flex: 1;
+}
+
+.root,
+.root > * {
+	height: 100%;
+	max-height: 100%;
+	overflow: auto;
+}
+
+.workerSwitch {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	align-items: center;
+	transform: translateX(-50%);
+	border-top-left-radius: value(sizeBorderRadius);
+	border-top-right-radius: value(sizeBorderRadius);
+	background: value(colorWhite);
+	padding: value(sizeGapSmall);
+}
+
+.workerSwitch input {
+	margin: 0 value(sizeGapSmall);
+}

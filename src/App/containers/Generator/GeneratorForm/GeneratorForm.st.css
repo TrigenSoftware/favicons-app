@@ -1,0 +1,34 @@
+
+:import {
+	-st-from: '~/components/variables.st.css';
+	-st-named: sizeGapSmall;
+}
+
+.root {
+	display: flex;
+	flex-direction: column;
+}
+
+.controls {
+	display: flex;
+}
+
+.controls > * {
+	margin: value(sizeGapSmall);
+}
+
+.controls > :last-child {
+	margin-left: auto;
+}
+
+.configTextarea {
+	flex: 1;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0;
+	padding: 0 value(sizeGapSmall) value(sizeGapSmall);
+}
+
+.configTextarea > label {
+	flex: 0;
+}

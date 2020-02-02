@@ -1,0 +1,19 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandDanger;
+}
+
+.danger {
+	color: value(colorBrandDanger);
+}
+
+.danger:hover,
+.danger:focus {
+	color: darken(value(colorBrandDanger), 16%);
+}

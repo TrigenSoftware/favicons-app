@@ -1,0 +1,32 @@
+{
+	"exclude": "node_modules/**",
+	"presets": [
+		[
+			"babel-preset-trigen",
+			{
+				"react": true
+			}
+		]
+	],
+	"env": {
+		"test": {
+			"presets": [
+				[
+					"babel-preset-trigen",
+					{
+						"targets": {
+							"node": "current"
+						},
+						"commonjs": true,
+						"typescript": true,
+						"react": true,
+						"transformDynamicImport": true
+					}
+				]
+			],
+			"plugins": [
+				"require-context-hook"
+			]
+		}
+	}
+}

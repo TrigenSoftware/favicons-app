@@ -1,0 +1,19 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandWarning;
+}
+
+.warning {
+	color: value(colorBrandWarning);
+}
+
+.warning:hover,
+.warning:focus {
+	color: darken(value(colorBrandWarning), 16%);
+}

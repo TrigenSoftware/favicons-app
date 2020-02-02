@@ -1,0 +1,239 @@
+
+:import {
+	-st-from: '@flexis/ui/components/Button/Button.st.css';
+	-st-named: icon;
+}
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named:
+		darken,
+		textColor;
+}
+
+:import {
+	-st-from: '@flexis/ui/stylable/rel';
+	-st-default: rel;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		opacityDisabled,
+		sizeBorderRadius,
+		durationTransition,
+		colorBlue,
+		colorBlack,
+		colorWhite,
+		colorGrayLight;
+}
+
+:import {
+	-st-from: '../mixins.st.css';
+	-st-named: outline as outlineMixin;
+}
+
+:import {
+	-st-from: './mods/Button--primary.st.css';
+	-st-named: primary;
+}
+
+:import {
+	-st-from: './mods/Button--secondary.st.css';
+	-st-named: secondary;
+}
+
+:import {
+	-st-from: './mods/Button--success.st.css';
+	-st-named: success;
+}
+
+:import {
+	-st-from: './mods/Button--info.st.css';
+	-st-named: info;
+}
+
+:import {
+	-st-from: './mods/Button--warning.st.css';
+	-st-named: warning;
+}
+
+:import {
+	-st-from: './mods/Button--danger.st.css';
+	-st-named: danger;
+}
+
+:import {
+	-st-from: './mods/Button--flat.st.css';
+	-st-named:
+		flat,
+		flatPrimary,
+		flatSecondary,
+		flatSuccess,
+		flatInfo,
+		flatWarning,
+		flatDanger;
+}
+
+:import {
+	-st-from: './mods/Button--outline.st.css';
+	-st-named:
+		outline,
+		outlinePrimary,
+		outlineSecondary,
+		outlineSuccess,
+		outlineInfo,
+		outlineWarning,
+		outlineDanger;
+}
+
+.root {
+	-st-states:
+		/* Variant states */
+		flat,
+		outline,
+		pseudoActive,
+		pseudoFocus,
+		/* Color states */
+		primary,
+		secondary,
+		success,
+		info,
+		warning,
+		danger;
+	will-change:
+		opacity,
+		background-color,
+		color,
+		box-shadow;
+	transition:
+		opacity value(durationTransition),
+		background-color value(durationTransition),
+		color value(durationTransition),
+		box-shadow value(durationTransition);
+	outline: none !important;
+	border: 0;
+	border-radius: rel(value(sizeBorderRadius), 16);
+	background-color: value(colorGrayLight);
+	padding: rel(5, 16) rel(12, 16);
+	color: textColor(value(colorGrayLight), value(colorBlack), value(colorWhite));
+	font-size: 1.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root:disabled {
+	opacity: value(opacityDisabled);
+}
+
+.root:focus {
+	-st-mixin: outlineMixin;
+}
+
+.root .icon {
+	width: 1em;
+	height: 1em;
+}
+
+.root .icon:rightAlign {
+	margin-left: rel(8, 16);
+}
+
+.root .icon:leftAlign {
+	margin-right: rel(8, 16);
+}
+
+.root:primary {
+	-st-mixin: primary;
+}
+
+.root:secondary {
+	-st-mixin: secondary;
+}
+
+.root:success {
+	-st-mixin: success;
+}
+
+.root:info {
+	-st-mixin: info;
+}
+
+.root:warning {
+	-st-mixin: warning;
+}
+
+.root:danger {
+	-st-mixin: danger;
+}
+
+.root:flat {
+	-st-mixin: flat;
+}
+
+.root:outline {
+	-st-mixin: outline;
+}
+
+.root:focus,
+.root:not(:disabled):hover {
+	background-color: darken(value(colorGrayLight), 10%);
+}
+
+.root:not(:disabled):active {
+	background-color: darken(value(colorGrayLight), 18%);
+}
+
+.root:flat:primary {
+	-st-mixin: flatPrimary;
+}
+
+.root:flat:secondary {
+	-st-mixin: flatSecondary;
+}
+
+.root:flat:success {
+	-st-mixin: flatSuccess;
+}
+
+.root:flat:info {
+	-st-mixin: flatInfo;
+}
+
+.root:flat:warning {
+	-st-mixin: flatWarning;
+}
+
+.root:flat:danger {
+	-st-mixin: flatDanger;
+}
+
+.root:outline:primary {
+	-st-mixin: outlinePrimary;
+}
+
+.root:outline:secondary {
+	-st-mixin: outlineSecondary;
+}
+
+.root:outline:success {
+	-st-mixin: outlineSuccess;
+}
+
+.root:outline:info {
+	-st-mixin: outlineInfo;
+}
+
+.root:outline:warning {
+	-st-mixin: outlineWarning;
+}
+
+.root:outline:danger {
+	-st-mixin: outlineDanger;
+}

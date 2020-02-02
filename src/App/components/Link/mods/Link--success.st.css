@@ -1,0 +1,19 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandSuccess;
+}
+
+.success {
+	color: value(colorBrandSuccess);
+}
+
+.success:hover,
+.success:focus {
+	color: darken(value(colorBrandSuccess), 16%);
+}

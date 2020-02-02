@@ -1,0 +1,7 @@
+
+:global(html),
+:global(body),
+:global(#root),
+:global(#view) {
+	height: 100%;
+}

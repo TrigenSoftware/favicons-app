@@ -1,0 +1,19 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: darken;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandSecondary;
+}
+
+.secondary {
+	color: value(colorBrandSecondary);
+}
+
+.secondary:hover,
+.secondary:focus {
+	color: darken(value(colorBrandSecondary), 16%);
+}

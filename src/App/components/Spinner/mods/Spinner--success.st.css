@@ -1,0 +1,10 @@
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandSuccess;
+}
+
+.success {
+	border-color: value(colorBrandSuccess);
+	border-right-color: transparent;
+}

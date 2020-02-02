@@ -1,0 +1,61 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: lighten;
+}
+
+:import {
+	-st-from: '~/components/variables.st.css';
+	-st-named:
+		sizeGapSmall,
+		colorBlueLight;
+}
+
+.root {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding: value(sizeGapSmall);
+}
+
+.spinner {
+	font-size: 1.05em;
+}
+
+.icons {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	background-color: lighten(value(colorBlueLight), 20%);
+	overflow: auto;
+}
+
+.icons figure {
+	flex: 1 1 25%;
+	margin: 0;
+	padding: value(sizeGapSmall);
+	max-width: 25%;
+	text-align: center;
+}
+
+.icons a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.icons img {
+	margin: auto;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.icons figcaption {
+	margin-top: value(sizeGapSmall);
+}

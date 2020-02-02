@@ -1,0 +1,62 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/rel';
+	-st-default: rel;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		durationTransition,
+		opacityDisabled,
+		sizeBorderRadius,
+		colorBlueLight,
+		colorGray;
+}
+
+:import {
+	-st-from: '../mixins.st.css';
+	-st-named: outline;
+}
+
+.root {
+	will-change:
+		opacity,
+		border-color,
+		box-shadow;
+	transition:
+		opacity value(durationTransition),
+		border-color value(durationTransition),
+		box-shadow value(durationTransition);
+	outline: none;
+	border: 1px solid value(colorGray);
+	border-radius: rel(value(sizeBorderRadius), 16);
+	padding: rel(4, 16) rel(11, 16);
+	overflow: auto;
+	font-size: 1.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root::placeholder {
+	color: value(colorGray);
+}
+
+.root:disabled {
+	opacity: value(opacityDisabled);
+}
+
+.root:focus {
+	-st-mixin: outline;
+}
+
+.root:focus,
+.root:not(:disabled):hover {
+	border: 1px solid value(colorBlueLight);
+}

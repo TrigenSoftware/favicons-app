@@ -1,0 +1,10 @@
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named: colorBrandDanger;
+}
+
+.danger {
+	border-color: value(colorBrandDanger);
+	border-right-color: transparent;
+}

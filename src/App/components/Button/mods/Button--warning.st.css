@@ -1,0 +1,37 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named:
+		darken,
+		textColor;
+}
+
+:import {
+	-st-from: '../../variables.st.css';
+	-st-named:
+		colorWhite,
+		colorBlack,
+		colorBrandWarning;
+}
+
+:import {
+	-st-from: '../Button.st.css';
+	-st-default: Button;
+}
+
+.warning {
+	-st-extends: Button;
+	background-color: value(colorBrandWarning);
+	color: textColor(value(colorBrandWarning), value(colorBlack), value(colorWhite));
+}
+
+.warning:focus,
+.warning:not(:disabled):hover,
+.warning:not(:disabled):pseudoFocus {
+	background-color: darken(value(colorBrandWarning), 10%);
+}
+
+.warning:not(:disabled):active,
+.warning:not(:disabled):pseudoActive {
+	background-color: darken(value(colorBrandWarning), 20%);
+}

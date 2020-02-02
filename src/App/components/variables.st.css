@@ -1,0 +1,31 @@
+
+:vars {
+	/* Commons */
+	durationTransition: .2s;
+	opacityDisabled: .6;
+
+	/* Sizes */
+	sizeBorderRadius: 3px;
+	sizeGapHorizontal: 2.5rem;
+	sizeGapVertical: 2rem;
+	sizeGapSmall: 1.6rem;
+
+	/* Colors */
+	colorBlack: black;
+	colorWhite: white;
+	colorGray: #ced4da;
+	colorGrayLight: #eeeeee;
+	colorBlue: #3a88fd;
+	colorBlueLight: #a9d9f9;
+	colorGreen: #2ecc71;
+	colorYellow: #f1c40f;
+	colorRed: #e74c3c;
+
+	/* Semantic colors */
+	colorBrandPrimary: value(colorBlue);
+	colorBrandSecondary: value(colorGray);
+	colorBrandSuccess: value(colorGreen);
+	colorBrandInfo: value(colorBlueLight);
+	colorBrandWarning: value(colorYellow);
+	colorBrandDanger: value(colorRed);
+}

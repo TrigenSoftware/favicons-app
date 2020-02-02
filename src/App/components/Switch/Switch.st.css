@@ -1,0 +1,93 @@
+
+:import {
+	-st-from: '@flexis/ui/stylable/colors';
+	-st-named: lighten;
+}
+
+:import {
+	-st-from: '../variables.st.css';
+	-st-named:
+		durationTransition,
+		opacityDisabled,
+		colorWhite,
+		colorGray,
+		colorGreen;
+}
+
+:import {
+	-st-from: '../mixins.st.css';
+	-st-named: outline;
+}
+
+.root {
+	position: relative;
+	will-change:
+		opacity,
+		background-color,
+		box-shadow;
+	transition:
+		opacity value(durationTransition),
+		background-color value(durationTransition),
+		box-shadow value(durationTransition);
+	appearance: none;
+	outline: none;
+	border: .2em solid transparent;
+	border-radius: 2em;
+	background-color: value(colorGray);
+	width: 3.4em;
+	height: 2em;
+	font-size: 1rem;
+}
+
+.root::before {
+	display: block;
+	position: absolute;
+	will-change: transform;
+	transition: transform value(durationTransition);
+	box-shadow: 0 .2em .5em rgba(0, 0, 0, .26);
+	border-radius: 100%;
+	background-color: value(colorWhite);
+	padding: 0;
+	width: 1.6em;
+	height: 1.6em;
+	content: '';
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.root {
+		will-change: none;
+		transition: none;
+	}
+
+	.root::before {
+		will-change: none;
+		transition: none;
+	}
+}
+
+.root:checked {
+	background-color: value(colorGreen);
+}
+
+.root:checked::before {
+	transform: translate(1.4em, 0);
+}
+
+.root:disabled {
+	opacity: value(opacityDisabled);
+}
+
+.root:focus {
+	-st-mixin: outline;
+}
+
+.root:focus,
+.root:not(:disabled):hover {
+	background-color: lighten(value(colorGray), 5%);
+}
+
+.root:checked:focus,
+.root:checked:not(:disabled):hover {
+	background-color: lighten(value(colorGreen), 15%);
+}
