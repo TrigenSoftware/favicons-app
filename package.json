@@ -22,7 +22,7 @@
     "test": "trigen-scripts test",
     "artifacts": "trigen-scripts artifacts test/__image_snapshots__",
     "build:favicons": "trigen-scripts build:favicons --appleOffset 15 --appleStartupOffset 15 -m src/manifest.json --path /favicons",
-    "build:docs": "trigen-scripts build:docs",
+    "build:docs": "./scripts/buildDocs.sh",
     "start:storybook": "trigen-scripts start:storybook -c .storybook",
     "build:storybook": "trigen-scripts build:storybook -c .storybook",
     "build:imageProcessor": "cd src/ImageProcessor && make build_wasm",
