@@ -61,6 +61,11 @@ export function build(config) {
 				]
 			}
 		},
+		// optimization: {
+		// 	minimize: {
+		// 		$set: false
+		// 	}
+		// },
 		plugins: {
 			$push: [
 				new StylableImportOrderPlugin({

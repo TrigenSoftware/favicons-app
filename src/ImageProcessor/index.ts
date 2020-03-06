@@ -37,7 +37,7 @@ export default async function createImageProcessor() {
 	const fetchTask = fetch(imageProcessorUrl);
 	let result: WebAssembly.WebAssemblyInstantiatedSource = null;
 
-	if (WebAssembly.instantiateStreaming) {
+	if (WebAssembly.instantiateStreaming && typeof process.env.DSL_ENV !== 'undefined') {
 		result = await WebAssembly.instantiateStreaming(
 			fetchTask,
 			go.importObject
