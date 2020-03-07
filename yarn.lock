@@ -2272,10 +2272,10 @@
     babel-plugin-require-context-hook "^1.0.0"
     react-test-renderer "^16.9.0"
 
-"@trigen/scripts-plugin-typescript@^5.0.0-alpha.0":
-  version "5.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-typescript/-/scripts-plugin-typescript-5.0.0-alpha.0.tgz#7ba3abe2a918965cc54fbafc5d580ca960ddbe98"
-  integrity sha512-Y0BsE3ODHez/PwZlsLczcfCK0JyeYmGPzym3dZBHnL4Gh1CNIRYZfREGHP4GEClTZN6FNwaOTt+MT9XDS6Wekw==
+"@trigen/scripts-plugin-typescript@^5.0.1-alpha.0":
+  version "5.0.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-plugin-typescript/-/scripts-plugin-typescript-5.0.1-alpha.0.tgz#6a7444f139aabbc87eeea70c38430f2200455ccc"
+  integrity sha512-+xQW4N/3JBM9F6ursN2kBNGNES1ZVdEq6IqL85ejVfmyLd8hwqJUjwdI+hQDV48IcAy7fGCosaCS2An5qt6EFg==
   dependencies:
     "@trigen/scripts" "^4.0.0"
     ts-node-dev "^1.0.0-pre.39"
@@ -2283,12 +2283,12 @@
     tslint "^6.0.0"
     tslint-config-trigen "^3.0.7"
     typedoc "^0.16.8"
-    typescript "3.7.5"
+    typescript "3.8.3"
 
-"@trigen/scripts-preset-react-app@^5.0.0-alpha.0":
-  version "5.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@trigen/scripts-preset-react-app/-/scripts-preset-react-app-5.0.0-alpha.0.tgz#0e64226908df065d006edd95d42fdd27a0cc39f1"
-  integrity sha512-IachSUbZm+tRTrS50h6viZjA+k+U9+mwrhGjLnb0iJSCdrB/g/d6YKIvkSOPv5iRPlWVd0jxdrWYaNrUC5ZOSg==
+"@trigen/scripts-preset-react-app@^5.0.1-alpha.0":
+  version "5.0.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts-preset-react-app/-/scripts-preset-react-app-5.0.1-alpha.0.tgz#ecd30ba91f0c9498c6b58e0526d69ce6c5e945da"
+  integrity sha512-8Jl775LgGjI4Xxf5JEzgdgcur2jIQyjAg+lc0kbZN+OHewUtPKScNw6M+mhcPgdQUZmt6ZkcwRPB/y9yhXBGkQ==
   dependencies:
     "@babel/register" "^7.4.0"
     "@flexis/favicons" "^1.3.4"
@@ -2300,7 +2300,7 @@
     "@trigen/scripts-plugin-babel" "^4.0.0"
     "@trigen/scripts-plugin-jest" "^5.0.0-alpha.0"
     "@trigen/scripts-plugin-storybook" "^5.0.0-alpha.0"
-    "@trigen/scripts-plugin-typescript" "^5.0.0-alpha.0"
+    "@trigen/scripts-plugin-typescript" "^5.0.1-alpha.0"
     autoprefixer "^9.1.3"
     babel-loader "^8.0.0"
     bdsl-webpack-plugin "^1.1.1-beta"
@@ -2318,7 +2318,7 @@
     hmr-filter-webpack-plugin "^1.0.0"
     html-webpack-exclude-assets-plugin "^0.0.7"
     html-webpack-plugin "^3.2.0"
-    http-proxy-middleware "^0.20.0"
+    http-proxy-middleware "^1.0.1"
     humps "^2.0.1"
     husky "^4.0.9"
     jest-image-snapshot "^2.11.0"
@@ -2330,7 +2330,7 @@
     puppeteer "^2.1.1"
     react-hot-loader "4.12.15"
     script-ext-html-webpack-plugin "^2.1.4"
-    service-worker-loader "^3.3.0"
+    service-worker-loader "^4.0.1"
     stylelint "^13.0.0"
     stylelint-config-trigen "^2.0.4"
     stylelint-webpack-plugin "^1.0.3"
@@ -2441,6 +2441,13 @@
   version "4.7.5"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.5.tgz#527d20ef68571a4af02ed74350164e7a67544860"
   integrity sha512-wLD/Aq2VggCJXSjxEwrMafIP51Z+13H78nXIX0ABEuIGhmB5sNGbR113MOKo+yfw+RDo1ZU3DM6yfnnRF/+ouw==
+
+"@types/http-proxy@^1.17.3":
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.3.tgz#348e1b808ff9585423cb909e9992d89ccdbf4c14"
+  integrity sha512-wIPqXANye5BbORbuh74exbwNzj+UWCwWyeEFJzUQ7Fq3W2NSAy+7x7nX1fgbEypr2/TdKqpeuxLnXWgzN533/Q==
+  dependencies:
+    "@types/node" "*"
 
 "@types/is-function@^1.0.0":
   version "1.0.0"
@@ -8788,14 +8795,15 @@ http-errors@~1.6.2:
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.10.tgz#92c9c1374c35085f75db359ec56cc257cbb93fa4"
   integrity sha1-ksnBN0w1CF912zWexWzCV8u5P6Q=
 
-http-proxy-middleware@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-0.20.0.tgz#5b128f7207985c4ea91b53fab8ad897a48c690d6"
-  integrity sha512-dNJAk71nEJhPiAczQH9hGvE/MT9kEs+zn2Dh+Hi94PGZe1GluQirC7mw5rdREUtWx6qGS1Gu0bZd4qEAg+REgw==
+http-proxy-middleware@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-1.0.1.tgz#a87ee6564991faca4844ae4ab1cf4221279c28f0"
+  integrity sha512-tVLWnJMEUANithPrWeYgReU+mi6/BJOlyvWKQGS4k8L+j2ZjituJdXhejd31X5J8Ux0SSIH7Iw+RItH9bwkGcw==
   dependencies:
-    http-proxy "^1.17.0"
+    "@types/http-proxy" "^1.17.3"
+    http-proxy "^1.18.0"
     is-glob "^4.0.1"
-    lodash "^4.17.14"
+    lodash "^4.17.15"
     micromatch "^4.0.2"
 
 http-proxy@1.15.2:
@@ -8806,7 +8814,7 @@ http-proxy@1.15.2:
     eventemitter3 "1.x.x"
     requires-port "1.x.x"
 
-http-proxy@^1.17.0:
+http-proxy@^1.18.0:
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.0.tgz#dbe55f63e75a347db7f3d99974f2692a314a6a3a"
   integrity sha512-84I2iJM/n1d4Hdgc6y2+qY5mDaz2PUVjlg9znE9byl+q0uC3DeByqBGReQu5tpLK0TAqTIXScRUV+dg7+bUPpQ==
@@ -15095,10 +15103,20 @@ server-destroy@1.0.1:
   resolved "https://registry.yarnpkg.com/server-destroy/-/server-destroy-1.0.1.tgz#f13bf928e42b9c3e79383e61cc3998b5d14e6cdd"
   integrity sha1-8Tv5KOQrnD55OD5hzDmYtdFObN0=
 
-service-worker-loader@3, service-worker-loader@^3.3.0:
+service-worker-loader@3:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/service-worker-loader/-/service-worker-loader-3.3.1.tgz#6de513be3da85caf915d77d67ef01eae6282db21"
   integrity sha512-IS/+HjiJ7yciCQbMFMDihZeSMFrqA1QOaAv0UB8TizWtM7gdg9Q3h9kRejU0wXbysTNuKwb9AUKhPrF09ovcow==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    core-js "3"
+    loader-utils "^1.2.3"
+    schema-utils "^2.1.0"
+
+service-worker-loader@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/service-worker-loader/-/service-worker-loader-4.0.1.tgz#8be6c0c98c5eb2dc4d76ce090e380ccd5eed0617"
+  integrity sha512-A1OS6K/hAIUgs36OirTgzTWt7gojlXdSL29cXi3e+KKkE5u30+MaprgR7LwBpXQpFmA0b4aV7AxucIjGxnmSsQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     core-js "3"
@@ -17031,10 +17049,15 @@ typedoc@^0.16.8:
     typedoc-default-themes "^0.7.2"
     typescript "3.7.x"
 
-typescript@3.7.5, typescript@3.7.x:
+typescript@3.7.x:
   version "3.7.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
   integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+
+typescript@3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 ua-parser-js@0.7.17:
   version "0.7.17"
@@ -18195,6 +18218,11 @@ xmldom@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.2.1.tgz#cac9465066f161e1c3302793ea4dbe59c518274f"
   integrity sha512-kXXiYvmblIgEemGeB75y97FyaZavx6SQhGppLw5TKWAD2Wd0KAly0g23eVLh17YcpxZpnFym1Qk/eaRjy1APPg==
+
+xmldom@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.3.0.tgz#e625457f4300b5df9c2e1ecb776147ece47f3e5a"
+  integrity sha512-z9s6k3wxE+aZHgXYxSTpGDo7BYOUfJsIRyoZiX6HTjwpwfS2wpQBQKa2fD+ShLyPkqDYo5ud7KitmLZ2Cd6r0g==
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
