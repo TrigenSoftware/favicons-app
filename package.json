@@ -51,10 +51,10 @@
   "devDependencies": {
     "@trigen/scripts": "^4.0.0",
     "@trigen/scripts-plugin-eslint": "^5.0.0-alpha.0",
-    "@trigen/scripts-preset-react-app": "^5.0.1-alpha.0",
+    "@trigen/scripts-preset-react-app": "^5.0.2-alpha.0",
     "@types/faker": "^4.1.10",
     "faker": "^4.1.0",
-    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-bundle-analyzer": "^3.6.1",
     "worker-loader": "^2.0.0"
   },
   "resolutions": {
