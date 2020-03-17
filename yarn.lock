@@ -972,14 +972,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7":
-  version "7.8.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.4.tgz#d79f5a2040f7caa24d53e563aad49cbc05581308"
-  integrity sha512-neAp3zt80trRVBI1x0azq6c57aNBqYZH8KhMm3TaB7wEI5Q4A2SHfBHE8w9gOhI/lrqxtEbXZgQIrHP+wvSGwQ==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.8.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.7":
   version "7.8.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
   integrity sha512-+AATMUFppJDw6aiR5NVPHqIQBlV/Pj8wY/EZH+lmvRdUo9xBaz/rF3alAwFJQavvKfeOlPE7oaaDHVbcySbCsg==
@@ -2349,6 +2342,18 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@trigen/scripts/-/scripts-4.0.0.tgz#f2e03de69e760a56faab0549c6a0c787a316ca83"
   integrity sha512-6G1sFEJd3YNBBfeynFIp2BZmaXTq0C8wQXV0NsQK7WZYgpjbHuvtJ0iu2O8+by5+n5oabG67VmjpWT0X29zQog==
+  dependencies:
+    "@babel/runtime" "^7.4.2"
+    chalk "^3.0.0"
+    core-js "3"
+    immutability-helper "^3.0.0"
+    rcfile "^1.0.3"
+    resolve-cwd "^3.0.0"
+
+"@trigen/scripts@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@trigen/scripts/-/scripts-5.1.0.tgz#f54598de9545a092629d295ed8a0dda4cb5902b8"
+  integrity sha512-SqRjynJTuFjlfdLd+MaSVnKbkT4rXRzWj4I1kn5gzNQ18dUg9qqL0IU7xYNufDX7sF+vnjZiOEuFXh7dcGrdcA==
   dependencies:
     "@babel/runtime" "^7.4.2"
     chalk "^3.0.0"
