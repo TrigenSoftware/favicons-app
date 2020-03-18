@@ -11,7 +11,7 @@ declare module '*.st.css' {
 
 declare module '*.svg' {
 	// tslint:disable-next-line
-	const svg: typeof import('@trigen/scripts-preset-react-app/helpers/IconComponent').default;
+	const svg: typeof import('@trigen/scripts-preset-react-app/helpers/icons/IconComponent').default;
 	export default svg;
 }
 
