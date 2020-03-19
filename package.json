@@ -44,7 +44,7 @@
     "comlink": "^4.2.0",
     "core-js": "3",
     "prop-types": "^15.6.0",
-    "react": "^16.13.0",
+    "react": "^16.13.1",
     "react-dom": "^16.13.0",
     "xmldom": "^0.3.0"
   },
