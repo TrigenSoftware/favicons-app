@@ -31,7 +31,7 @@
     "serve": "trigen-scripts serve"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.7",
+    "@babel/runtime": "^7.11.2",
     "@flexis/favicons": "^1.4.4",
     "@flexis/ui": "^1.2.0-beta",
     "@loadable/component": "^5.10.2",
