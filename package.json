@@ -54,7 +54,7 @@
     "@trigen/scripts-preset-react-app": "^5.1.2",
     "@types/faker": "^4.1.10",
     "faker": "^4.1.0",
-    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-bundle-analyzer": "^4.1.0",
     "worker-loader": "^2.0.0"
   },
   "resolutions": {
