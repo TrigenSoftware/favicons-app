@@ -51,7 +51,7 @@
   "devDependencies": {
     "@trigen/scripts": "^5.1.0",
     "@trigen/scripts-plugin-eslint": "^5.1.0",
-    "@trigen/scripts-preset-react-app": "^5.1.2",
+    "@trigen/scripts-preset-react-app": "^7.0.6",
     "@types/faker": "^4.1.10",
     "faker": "^4.1.0",
     "webpack-bundle-analyzer": "^3.6.1",
