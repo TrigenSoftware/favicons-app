@@ -52,7 +52,7 @@
     "@trigen/scripts": "^5.1.0",
     "@trigen/scripts-plugin-eslint": "^5.1.0",
     "@trigen/scripts-preset-react-app": "^5.1.2",
-    "@types/faker": "^4.1.10",
+    "@types/faker": "^5.5.1",
     "faker": "^4.1.0",
     "webpack-bundle-analyzer": "^3.6.1",
     "worker-loader": "^2.0.0"
